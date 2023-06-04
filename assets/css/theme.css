@@ -1805,12 +1805,14 @@
   position: absolute;
   top: 0;
   right: 0;
+  opacity: .5;
 }
 
 .ab_img_right_bottom {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
+  opacity: .5;
 }
 
 .ab_img_right_top {
@@ -5626,7 +5628,7 @@ body .service_post.style_one .owl-carousel .owl-dots {
 
 .team_box.type_two .image_box {
   position: relative;
-  height: 180px;
+  height: 275px;
   width: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -5666,6 +5668,7 @@ body .service_post.style_one .owl-carousel .owl-dots {
   gap: 2px;
   width: 100%;
   height: 100%;
+  font-size: 18px;
 }
 
 .team_box.type_two .image_box .social-icons ul li {
@@ -17149,16 +17152,15 @@ input[type=range i]:focus::-webkit-slider-thumb {
 }
 
 .president {
-  text-align: center;
-  width: 70%;
   margin: 0 auto;
+  display: flex;
+  gap: 40px;
 }
 
-.president .image-layer img {
-  margin: 0 auto;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+.president img {
+  width: 300px;
+  height: 370px;
+  min-width: max-content;
   object-fit: cover;
   border: 2px solid #ffffff8c;
   padding: 3px;
@@ -17170,9 +17172,9 @@ input[type=range i]:focus::-webkit-slider-thumb {
   font-size: 28px;
   font-family: 'Regular';
   width: max-content;
-  margin: auto;
   margin-bottom: 15px;
   color: #f3f3f3;
+  margin-right: 20px;
 }
 
 .president .section_title .title::before {
@@ -17380,6 +17382,10 @@ input[type=range i]:focus::-webkit-slider-thumb {
   text-align: right;
   padding-right: 20px;
   margin-top: 20px;
+}
+
+.team-modal .member-dts .dts-content * {
+  font-size: 16px;
 }
 
 .team-modal .member-dts .dts-content ul {
