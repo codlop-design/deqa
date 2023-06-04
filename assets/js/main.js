@@ -139,44 +139,6 @@
     }
   }
 
-  /*==========================================================================
-    slickslider
-==========================================================================*/
-  function codlop_slick_vertical() {
-    $(".slickslider").not(".slick-initialized").slick({
-      vertical: true,
-      verticalSwiping: true,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: true,
-      centerMode: false,
-      adaptiveHeight: true,
-      autoplay: true,
-      autoplaySpeed: 2000,
-    });
-  }
-  /*==========================================================================
-   Theme Carousel
-==========================================================================*/
-  function codlop_theme_owl_carousel() {
-    if ($(".theme_carousel").length) {
-      $(".theme_carousel").each(function (index) {
-        var $owlAttr = {
-            thumbs: false,
-            rtl: true,
-            navText: [
-              '<i class="bi bi-chevron-right"></i>',
-              '<i class="bi bi-chevron-left"></i>',
-            ],
-          },
-          $extraAttr = $(this).data("options");
-        $.extend($owlAttr, $extraAttr);
-        $(this).owlCarousel($owlAttr);
-      });
-    }
-  }
-
   /*---====================---active class for header---======================---*/
   // $(document).ready(function() {
   //     var CurrentUrl = document.URL;
@@ -199,14 +161,61 @@
     codlop_headerStyle();
   });
 
+  function codlop_faqsall() {
+    //Accordion Box
+    if ($(".accordion-box").length) {
+      $(".accordion-box").on("click", ".question", function () {
+        var outerBox = $(this).parents(".accordion-box");
+        var target = $(this).parents(".accordion");
+
+        if ($(this).hasClass("active") !== true) {
+          $(outerBox).find(".accordion .question").removeClass("active");
+        }
+
+        if ($(this).next(".accordion-content").is(":visible")) {
+          return false;
+        } else {
+          $(this).addClass("active");
+          $(outerBox).children(".accordion").removeClass("active-block");
+          $(outerBox)
+            .find(".accordion")
+            .children(".accordion-content")
+            .slideUp(300);
+          target.addClass("active-block");
+          $(this).next(".accordion-content").slideDown(300);
+        }
+      });
+    }
+  }
+
+  /*==========================================================================
+   Theme Carousel
+==========================================================================*/
+  function codlop_theme_owl_carousel() {
+    $(".theme_carousel").each(function (index) {
+      var $owlAttr = {
+          thumbs: false,
+          animateOut: 'fadeOut',
+          animateIn: 'fadeIn',
+          rtl: true,
+          navText: [
+            '<i class="bi bi-chevron-right"></i>',
+            '<i class="bi bi-chevron-left"></i>',
+          ],
+        },
+        $extraAttr = $(this).data("options");
+      $.extend($owlAttr, $extraAttr);
+      $(this).owlCarousel($owlAttr);
+    });
+  }
+
+  $(window).on("load", function () {
+    $(".loader-wrap").delay(500).fadeOut(200);
+  });
+
   $(document).ready(function () {
     onepagemobile_nav();
-    codlop_slick_vertical();
+    codlop_faqsall();
     codlop_theme_owl_carousel();
   });
 })(jQuery);
-
-/*---====================---preloader---======================---*/
-$(window).on("load", function () {
-  $(".loader-wrap").fadeOut(500);
-});

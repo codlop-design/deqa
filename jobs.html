@@ -44,7 +44,7 @@
                   <div class="navbar_content d-flex align-items-center">
                     <ul class="navbar_nav">
                       <li class="menu-item  nav-item">
-                        <a href="index.html#slider" class="nav_link">
+                        <a href="index.html" class="nav_link">
                           <span class="text-link">
                             الرئيسية
                           </span>
@@ -221,6 +221,7 @@
         <div class="page-header">
           <div class="container-fluid">
             <h3 class="title-box">التوظيف</h3>
+            <div class="pattern"></div>
           </div>
         </div>
         <section class="jobs-form">  
@@ -229,11 +230,25 @@
               <h3 class="title-h3">بإمكانك إرسال بياناتك إلينا وسنقوم بالتواصل معك في حال طرح وظيفة أو تدريب مناسب لك</h3>
                     <form method="post" action="" role="form">
                             <div class="row">
-                                <div class="col-sm-12">
+                              <div class="col-sm-12">
+                                <div class="form-group">
+                                  <select name="" id="">
+                                    <option value="" selected disabled>نوع الطلب</option>
+                                    <option value="">توظيف</option>
+                                    <option value="">تدريب</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="الاسم">
+                                        <input type="text" name="name" placeholder="الاسم رباعي">
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                  <div class="form-group">
+                                      <input type="number" name="age" placeholder="العمر">
+                                  </div>
+                              </div>
                                 <div class="col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <input type="email" name="email" placeholder="البريد الالكتروني">
@@ -244,15 +259,6 @@
                                       <input type="number" name="phone" placeholder="رقم الجوال">
                                   </div>
                               </div>
-                                <div class="col-sm-12">
-                                    <div class="form-group">
-                                      <select name="" id="">
-                                        <option value="" selected disabled>نوع العمل</option>
-                                        <option value="">توظيف</option>
-                                        <option value="">تدريب</option>
-                                      </select>
-                                    </div>
-                                </div>
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <textarea name="message" placeholder="ملاحظات عامة" rows="5"></textarea>
@@ -313,7 +319,7 @@
                 <li>
                   <div class="d-flex align-items-center">
                     <div class="icon trans"></div>
-                    <a class="links" href="index.html#slider">
+                    <a class="links" href="index.html">
                       الرئيسية </a>
                   </div>
                 </li>
