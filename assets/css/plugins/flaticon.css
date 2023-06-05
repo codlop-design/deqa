@@ -9,26 +9,26 @@ i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
     font-weight: normal !important;
     font-variant: normal;
     text-transform: none;
-   
+    line-height: 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-favorites:before {
-  content: "\f101";
-}
 .flaticon-consolidate:before {
-  content: "\f102";
-}
-.flaticon-book:before {
-  content: "\f103";
-}
-.flaticon-money-bag:before {
-  content: "\f104";
-}
-.flaticon-balance:before {
-  content: "\f105";
+    content: "\f101";
 }
 .flaticon-communication:before {
-  content: "\f106";
+    content: "\f102";
+}
+.flaticon-robotic-machine:before {
+    content: "\f103";
+}
+.flaticon-office-building:before {
+    content: "\f104";
+}
+.flaticon-wrench:before {
+    content: "\f105";
+}
+.flaticon-factory:before {
+    content: "\f106";
 }
