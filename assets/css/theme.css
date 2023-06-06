@@ -17292,6 +17292,7 @@ input[type=range i]:focus::-webkit-slider-thumb {
   margin-bottom: 6px;
   font-size: 22px;
   font-family: 'SemiBold';
+  font-weight: normal;
 }
 
 .team-modal .member-dts h6 {
