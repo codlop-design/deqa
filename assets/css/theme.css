@@ -18845,9 +18845,10 @@ svg line.angle {
   }
 
   .fun_facts-div {
-    flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
     margin-top: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
   .fun_facts-div .fun_facts {
