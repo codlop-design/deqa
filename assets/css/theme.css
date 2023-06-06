@@ -5671,7 +5671,7 @@ body .service_post.style_one .owl-carousel .owl-dots {
 .team_box.type_two:hover .image_box .social-icons {
   opacity: 1;
   transform: scale(1);
-  border-radius: 10px;
+  border-radius: 7px;
 }
 
 .team_box.type_two:hover .contnet h6 a {
@@ -5681,8 +5681,6 @@ body .service_post.style_one .owl-carousel .owl-dots {
 .team_box.type_two:hover .contnet h6 a span:after {
   color: var(--color-white);
 }
-
-.team_box.type_two:hover .contnet p {}
 
 .blog_box {
   position: relative;
