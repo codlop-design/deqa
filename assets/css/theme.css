@@ -18796,12 +18796,13 @@ svg line.angle {
     align-items: center;
     text-align: center;
   }
+
   .articale-box i {
     width: 55px;
     height: 55px;
     min-width: 55px;
     font-size: 30px;
-}
+  }
 }
 
 @media (max-width:450px) {
@@ -19167,5 +19168,9 @@ svg line.angle {
   .team-modal .member-dts .member-img.president-img {
     height: 135px;
     width: 135px;
+  }
+
+  .team-modal .member-dts .dts-content ul {
+    padding-right: 20px;
   }
 }
