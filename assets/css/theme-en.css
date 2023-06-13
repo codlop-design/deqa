@@ -3243,7 +3243,6 @@ pre {
   position: absolute;
   top: 0;
   right: 0;
-  transform: rotateY(180deg);
 }
 
 .icon_box_only.type_one .icon_box_in .icon {
