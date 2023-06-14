@@ -3252,14 +3252,7 @@ pre {
   margin-top: -50px;
 }
 
-.icon_box_only.type_one .icon_box_in .icon img {
-  width: 50px;
-  height: auto;
-}
-
-.icon_box_only.type_one .icon_box_in .icon i {
-  font-size: 55px;
-  color: var(--color-set-two-three-1);
+.icon_box_only.type_one .icon_box_in .icon {
   display: flex;
   background: #ffffff;
   width: 90px;
@@ -3268,6 +3261,11 @@ pre {
   justify-content: center;
   border-radius: 50%;
   box-shadow: var(--box-shadow-two);
+}
+
+.icon_box_only.type_one .icon_box_in .icon img {
+  width: 55px;
+  height: 55px;
 }
 
 .icon_box_only.type_one .icon_box_in:hover {
@@ -17904,10 +17902,14 @@ svg line.angle {
     height: 150px;
   }
 
-  .icon_box_only.type_one .icon_box_in .icon i {
-    font-size: 50px;
+  .icon_box_only.type_one .icon_box_in .icon {
     width: 80px;
     height: 80px;
+  }
+
+  .icon_box_only.type_one .icon_box_in .icon img {
+    width: 50px;
+    height: 50px;
   }
 
   .icon_box_only.type_one .icon_box_in .icon {
@@ -18265,10 +18267,14 @@ svg line.angle {
     height: 135px;
   }
 
-  .icon_box_only.type_one .icon_box_in .icon i {
-    font-size: 40px;
+  .icon_box_only.type_one .icon_box_in .icon {
     width: 70px;
     height: 70px;
+  }
+
+  .icon_box_only.type_one .icon_box_in .icon img {
+    width: 40px;
+    height: 40px;
   }
 
   .icon_box_only.type_one .icon_box_in .icon {
@@ -18932,10 +18938,14 @@ svg line.angle {
     padding: 0 20px;
   }
 
-  .icon_box_only.type_one .icon_box_in .icon i {
-    font-size: 35px;
+  .icon_box_only.type_one .icon_box_in .icon {
     width: 60px;
     height: 60px;
+  }
+
+  .icon_box_only.type_one .icon_box_in .icon img {
+    width: 35px;
+    height: 35px;
   }
 
   .team_box.type_two .image_box {
